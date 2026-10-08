@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUGGED — Robust Uncrewed Ground technoloGy dEvelopment and Deployment</title>
+    <meta name="description" id="metaDescription" content="RUGGED — Desenvolvimento de tecnologia para sistemas terrestres não tripulados em ambientes extremos. Projeto FCT entre ADAI e ISR-UC.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+        <a href="#inicio" class="navbar-brand">
+            RUGGED<span class="logo-accent"></span>
+        </a>
+        <div class="nav-menu">
+            <ul>
+                <li><a href="#descricao" class="nav-link" data-i18n="nav.descricao">Descrição</a></li>
+                <li><a href="#parceiros" class="nav-link" data-i18n="nav.parceiros">Parceiros</a></li>
+                <li><a href="#documentacao" class="nav-link" data-i18n="nav.documentacao">Documentação</a></li>
+                <li><a href="#noticias" class="nav-link" data-i18n="nav.noticias">Notícias</a></li>
+                <li><a href="#contactos" class="nav-link" data-i18n="nav.contactos">Contactos</a></li>
+            </ul>
+        </div>
+        <div class="lang-switcher">
+            <button class="lang-btn active" data-lang="pt"><i class="fa-solid fa-globe"></i> PT</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <button class="nav-toggle" id="navToggle" data-i18n-aria="nav.openMenu" aria-label="Abrir menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu-overlay" id="mobileOverlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+        <a href="#inicio" class="navbar-brand" style="color: var(--secondary-color);">
+            <span class="logo-icon"><i class="fa-solid fa-robot"></i></span>
+            RUGGED<span class="logo-accent">.</span>
+        </a>
+        <button class="mobile-menu-close" id="mobileClose" data-i18n-aria="nav.closeMenu" aria-label="Fechar menu">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+    <nav>
+        <a href="#descricao" class="nav-link" data-i18n="nav.descricao">Descrição</a>
+        <a href="#parceiros" class="nav-link" data-i18n="nav.parceiros">Parceiros</a>
+        <a href="#documentacao" class="nav-link" data-i18n="nav.documentacao">Documentação</a>
+        <a href="#noticias" class="nav-link" data-i18n="nav.noticias">Notícias</a>
+        <a href="#contactos" class="nav-link" data-i18n="nav.contactos">Contactos</a>
+    </nav>
+    <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="pt"><i class="fa-solid fa-globe"></i> PT</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="inicio">
+    <div class="hero-inner">
+        <div class="hero-content">
+            <span class="hero-badge"><i class="fa-solid fa-flask"></i> <span data-i18n="hero.badge">Projeto FCT IC&amp;DT 2024 · Coimbra</span></span>
+            <h1><span class="highlight">RUGGED</span> — Robust Uncrewed Ground technoloGy dEvelopment and Deployment</h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">Desenvolvimento de tecnologia para sistemas terrestres não tripulados em ambientes extremos</p>
+            <p data-i18n="hero.description">O projeto RUGGED visa desenvolver soluções de hardware e software que permitam o funcionamento autónomo de robôs terrestres em ambientes extremos — florestas densas, cenários de incêndio, poeira, fumo, vibrações intensas e temperaturas extremas.</p>
+            <div class="hero-buttons">
+                <a href="#descricao" class="btn btn-primary"><span data-i18n="hero.btnProject">Conhecer o projeto</span> <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#contactos" class="btn btn-outline" data-i18n="hero.btnContact">Contactos</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="visual-card"><i class="fa-solid fa-robot"></i></div>
+            <div class="floating-badge badge-1"><i class="fa-solid fa-tree"></i><span data-i18n="hero.badgeForest">Robótica Florestal</span></div>
+            <div class="floating-badge badge-2"><i class="fa-solid fa-fire-flame-curved"></i><span data-i18n="hero.badgeFire">Cenários de Incêndio</span></div>
+            <div class="floating-badge badge-3"><i class="fa-solid fa-eye-low-vision"></i><span data-i18n="hero.badgeDust">Poeira · Fumo · Calor</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ DESCRIÇÃO ============ -->
+<section class="section section-dark" id="descricao">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag" data-i18n="desc.tag">Descrição</span>
+            <h2 data-i18n="desc.title">O projeto RUGGED</h2>
+            <p data-i18n="desc.subtitle">Uma abordagem multidisciplinar para tornar os sistemas terrestres não tripulados resilientes em ambientes extremos.</p>
+        </div>
+
+        <div class="about-text">
+            <p data-i18n="desc.p1">A revolução no desenvolvimento de microprocessadores nas últimas décadas, aliada a uma redução sustancial dos seus custos, criou um ambiente ideal para o desenvolvimento de algoritmos avançados e inteligência artificial em diversos setores. Um exemplo notável é a mudança de paradigma nos sistemas móveis não tripulados que, desde as suas origens nos anos 50 em ambientes fabris, sofreram melhorias significativas em termos de dimensão, robustez e capacidades.</p>
+            <p data-i18n="desc.p2">Contudo, <strong>certos domínios — como a agricultura, a silvicultura, a construção civil e cenários de desastres naturais — colocam desafios significativos</strong> para o estabelecimento de uma base robusta para sistemas autónomos terrestres. Apesar dos progressos consideráveis em algoritmos de perceção, localização e navegação, impulsionados pela indústria dos transportes, <strong>existe uma escassez de conhecimento sobre o desempenho destes sistemas em condições adversas</strong>, para além dos ambientes estruturados e relativamente controlados de estradas e armazéns.</p>
+            <p data-i18n="desc.p3">O projeto RUGGED procura avançar soluções que facilitem a operação integrada de algoritmos de perceção, localização e navegação, juntamente com hardware crítico para sistemas não tripulados em ambientes exteriores desafiadores, como cenários agrícolas, florestais e de incêndio. Esta empreitada ambiciosa exige uma abordagem multidisciplinar, focada principalmente nos domínios da engenharia eletrotécnica e mecânica, com forte ênfase em <strong>testes de campo reais</strong>, utilizando maquinaria florestal real e sensores em ambientes operacionais.</p>
+        </div>
+
+        <div class="keywords-row">
+            <span class="keyword-tag" data-i18n="desc.kw1">Robótica Florestal</span>
+            <span class="keyword-tag" data-i18n="desc.kw2">Sistemas Autónomos</span>
+            <span class="keyword-tag" data-i18n="desc.kw3">Ambientes Extremos</span>
+            <span class="keyword-tag" data-i18n="desc.kw4">Perceção Multisensorial</span>
+        </div>
+
+        <div class="wp-section-title">
+            <h3 data-i18n="desc.objTitle">Objetivos</h3>
+        </div>
+        <div class="obj-carousel-wrapper">
+            <button class="obj-nav obj-nav-prev" id="objPrev" data-i18n-aria="carousel.prev" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+            <div class="obj-carousel" id="objCarousel">
+                <div class="obj-track" id="objTrack">
+                    <div class="obj-card">
+                        <span class="obj-num">O1</span>
+                        <div class="obj-icon"><i class="fa-solid fa-microchip"></i></div>
+                        <h3 data-i18n="obj.1.title">Diretrizes de Posicionamento</h3>
+                        <p data-i18n="obj.1.desc">Normas para a colocação ótima de hardware sensível em robôs móveis.</p>
+                    </div>
+                    <div class="obj-card">
+                        <span class="obj-num">O2</span>
+                        <div class="obj-icon"><i class="fa-solid fa-wave-square"></i></div>
+                        <h3 data-i18n="obj.2.title">Filtragem de Ruído Mecânico</h3>
+                        <p data-i18n="obj.2.desc">Amortecimento de vibrações com sistemas ativos e passivos.</p>
+                    </div>
+                    <div class="obj-card">
+                        <span class="obj-num">O3</span>
+                        <div class="obj-icon"><i class="fa-solid fa-temperature-arrow-up"></i></div>
+                        <h3 data-i18n="obj.3.title">Gestão Térmica</h3>
+                        <p data-i18n="obj.3.desc">Blindagem térmica e arrefecimento passivo para hardware sensível.</p>
+                    </div>
+                    <div class="obj-card">
+                        <span class="obj-num">O4</span>
+                        <div class="obj-icon"><i class="fa-solid fa-tower-broadcast"></i></div>
+                        <h3 data-i18n="obj.4.title">Perceção Multisensorial</h3>
+                        <p data-i18n="obj.4.desc">RADAR 3D + sensores óticos redundantes para poeira e fumo.</p>
+                    </div>
+                    <div class="obj-card">
+                        <span class="obj-num">O5</span>
+                        <div class="obj-icon"><i class="fa-solid fa-location-crosshairs"></i></div>
+                        <h3 data-i18n="obj.5.title">Localização Multimodal</h3>
+                        <p data-i18n="obj.5.desc">Filtros não lineares (EKF / FGO) com GPS para navegação robusta.</p>
+                    </div>
+                    <div class="obj-card">
+                        <span class="obj-num">O6</span>
+                        <div class="obj-icon"><i class="fa-solid fa-image"></i></div>
+                        <h3 data-i18n="obj.6.title">Segmentação de Imagem</h3>
+                        <p data-i18n="obj.6.desc">Machine learning para discriminar troncos, copas, vegetação e fumo.</p>
+                    </div>
+                    <div class="obj-card">
+                        <span class="obj-num">O7</span>
+                        <div class="obj-icon"><i class="fa-solid fa-cube"></i></div>
+                        <h3 data-i18n="obj.7.title">Mapa Métrico-Semântico</h3>
+                        <p data-i18n="obj.7.desc">Representação 3D do ambiente com informação semântica integrada.</p>
+                    </div>
+                    <div class="obj-card">
+                        <span class="obj-num">O8</span>
+                        <div class="obj-icon"><i class="fa-solid fa-route"></i></div>
+                        <h3 data-i18n="obj.8.title">Análise de Traversabilidade</h3>
+                        <p data-i18n="obj.8.desc">Identificação de áreas transitáveis para planeamento de movimento.</p>
+                    </div>
+                    <div class="obj-card">
+                        <span class="obj-num">O9</span>
+                        <div class="obj-icon"><i class="fa-solid fa-vr-cardboard"></i></div>
+                        <h3 data-i18n="obj.9.title">Ambientes Virtuais</h3>
+                        <p data-i18n="obj.9.desc">Ambientes com ruído para recolha de dados sintéticos e treino.</p>
+                    </div>
+                    <div class="obj-card">
+                        <span class="obj-num">O10</span>
+                        <div class="obj-icon"><i class="fa-solid fa-database"></i></div>
+                        <h3 data-i18n="obj.10.title">Datasets Multisensoriais</h3>
+                        <p data-i18n="obj.10.desc">Dados de veículos terrestres em ambientes extremos para a comunidade.</p>
+                    </div>
+                    <div class="obj-card">
+                        <span class="obj-num">O11</span>
+                        <div class="obj-icon"><i class="fa-solid fa-robot"></i></div>
+                        <h3 data-i18n="obj.11.title">Protótipo de Robô Florestal</h3>
+                        <p data-i18n="obj.11.desc">Robô autónomo em escala real com as soluções de hardware e software.</p>
+                    </div>
+                    <div class="obj-card">
+                        <span class="obj-num">O12</span>
+                        <div class="obj-icon"><i class="fa-solid fa-clipboard-check"></i></div>
+                        <h3 data-i18n="obj.12.title">Validação Operacional</h3>
+                        <p data-i18n="obj.12.desc">Métricas de desempenho do protótipo em contexto operacional real.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="obj-nav obj-nav-next" id="objNext" data-i18n-aria="carousel.next" aria-label="Seguinte"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        <div class="obj-dots" id="objDots"></div>
+
+    </div>
+</section>
+
+<!-- ============ PARCEIROS ============ -->
+<section class="section section-light" id="parceiros">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag" data-i18n="partners.tag">Parceiros</span>
+        </div>
+
+        <div class="partners-grid">
+            <div class="partner-card" data-website="https://www.uc.pt/adai/">
+                <div class="partner-logo"><img src="images/ADAI.png" alt="ADAI"></div>
+                <h3 data-i18n="partners.adaiName">Associação para o Desenvolvimento da Aerodinâmica Industrial</h3>
+                <p data-i18n="partners.adaiDesc">Instituição privada sem fins lucrativos criada em 1990 na Universidade de Coimbra e classificada como "Excelente" pela FCT. Conta com 128 investigadores em quatro áreas: Energia e Detónica, Incêndios Florestais, Ecologia Industrial e Sustentabilidade, com laboratórios em Coimbra e Leiria.</p>
+                <span class="partner-more"><span data-i18n="partners.learnMore">Saber mais</span> <i class="fa-solid fa-arrow-right"></i></span>
+                <div class="partner-full">
+                    <p data-i18n="partners.adaiFullP1">A Associação para o Desenvolvimento da Aerodinâmica Industrial (ADAI) é uma instituição privada sem fins lucrativos e de utilidade pública, criada em 1990 no seio do Departamento de Engenharia Mecânica da Universidade de Coimbra. Desde 2006, integra o LAETA – Laboratório Associado de Energia, Transportes e Aeronáutica, classificado como "Excelente" pela FCT.</p>
+                    <p data-i18n="partners.adaiFullP2">Com uma equipa de 128 investigadores, incluindo 31 doutorados, a ADAI desenvolve investigação em quatro grandes áreas: Energia e Detónica, Incêndios Florestais, Ecologia Industrial e Sustentabilidade, com laboratórios dedicados em Coimbra e Leiria.</p>
+                    <p data-i18n="partners.adaiFullP3">O seu Field Tech Lab lidera projetos inovadores que cruzam tecnologia e gestão de incêndios, explorando soluções como UAVs e UGVs para deteção, monitorização e combate a incêndios, sistemas de apoio à decisão com inteligência artificial, e redes de sensores distribuídos, contribuindo ativamente para a proteção e resiliência do território.</p>
+                </div>
+            </div>
+            <div class="partner-card" data-website="https://www.isr.uc.pt/">
+                <div class="partner-logo"><img src="images/ISR.png" alt="ISR-UC"></div>
+                <h3 data-i18n="partners.isrName">Instituto de Sistemas e Robótica da Universidade de Coimbra</h3>
+                <p data-i18n="partners.isrDesc">Unidade de investigação fundada em 1992 e classificada como "Excelente" pela FCT — a única unidade nacional de Engenharia Eletrotécnica e de Computadores com esta distinção. Focada em robótica e sistemas inteligentes, com destaque para projetos em ambientes florestais como SEMFIRE, CORE e SAFEFOREST.</p>
+                <span class="partner-more"><span data-i18n="partners.learnMore">Saber mais</span> <i class="fa-solid fa-arrow-right"></i></span>
+                <div class="partner-full">
+                    <p data-i18n="partners.isrFullP1">O Instituto de Sistemas e Robótica da Universidade de Coimbra (ISR-UC) é uma unidade de investigação sem fins lucrativos, fundada em 1992, e classificada como "Excelente" pela FCT. É a única unidade nacional de Engenharia Eletrotécnica e de Computadores com esta distinção.</p>
+                    <p data-i18n="partners.isrFullP2">Focado em robótica e sistemas inteligentes, o ISR-UC desenvolve investigação de excelência com forte componente multidisciplinar e uma vasta experiência em projetos nacionais e europeus. Integra o Laboratório Associado ARISE e colabora regularmente com centros de excelência e parceiros industriais.</p>
+                    <p data-i18n="partners.isrFullP3">Nos últimos anos, tem apostado na aplicação da robótica e da sensorização em ambientes florestais, com destaque para os projetos SEMFIRE, CORE e o projeto de grande escala SAFEFOREST, no âmbito do programa CMU Portugal.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="consortium-text">
+            <p data-i18n="partners.consortium">The RUGGED Consortium unites two esteemed research institutions distinguished with Excellence in the FCT evaluation. The collective background and expertise of both teams are richly multidisciplinary, offering complementary strengths that intersect in crucial areas. The ADAI team's proficiency in wildfires, forest management, fluid dynamics, and mechanical engineering seamlessly complements the ISR team's prowess in robotics and sensor fusion. Notably, these teams have a history of successful collaboration on various projects in this domain. Both teams combine the experience and expertise of senior researchers with the availability of young researchers. The teams' senior researchers are well recognized in their areas of expertise, with an extensive publication record. The principal investigator (PI) of the project holds a dual background in mechanical engineering and robotics, serving as a vital bridge between the ADAI and ISR teams, having worked within both institutions previously.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ============ DOCUMENTAÇÃO ============ -->
+<section class="section section-light" id="documentacao">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag" data-i18n="docs.tag">Documentação</span>
+            <h2 data-i18n="docs.title">Documentação e Open Science</h2>
+            <p data-i18n="docs.subtitle">Documentos do projeto e compromisso com a ciência aberta.</p>
+        </div>
+
+        <!-- Documentação do Projeto -->
+        <div class="subsection-header">
+            <h3><i class="fa-solid fa-file-lines"></i> <span data-i18n="docs.projectTitle">Documentação do Projeto</span></h3>
+            <p data-i18n="docs.projectDesc">Relatórios, deliverables e documentos técnicos do projeto</p>
+        </div>
+        <div class="filter-bar">
+            <div class="search-box">
+                <i class="fa-solid fa-search"></i>
+                <input type="text" id="docsSearch" data-i18n-ph="docs.searchPh" placeholder="Pesquisar documentação...">
+            </div>
+        </div>
+        <div class="pubs-placeholder">
+            <i class="fa-solid fa-folder-open"></i>
+            <p data-i18n="docs.placeholder">A documentação do projeto será disponibilizada nesta secção ao longo do desenvolvimento do RUGGED.</p>
+        </div>
+
+        <!-- Open Science -->
+        <div class="subsection-header">
+            <h3><i class="fa-solid fa-flask-vial"></i> Open Science</h3>
+            <p data-i18n="docs.osDesc">Todos os resultados serão partilhados abertamente, seguindo os princípios da Open Science da UE.</p>
+        </div>
+        <div class="open-science-grid">
+            <div class="os-card"><i class="fa-solid fa-flask-vial"></i><h4 data-i18n="docs.os1Title">Open Methods</h4><p data-i18n="docs.os1Desc">Métodos, dados e resultados partilhados abertamente via Zenodo, compreensíveis e reproduzíveis.</p></div>
+            <div class="os-card"><i class="fa-brands fa-github"></i><h4 data-i18n="docs.os2Title">Open Source</h4><p data-i18n="docs.os2Desc">Código desenvolvido no RUGGED disponibilizado no GitHub sempre que possível.</p></div>
+            <div class="os-card"><i class="fa-solid fa-database"></i><h4 data-i18n="docs.os3Title">Open Data (FAIR)</h4><p data-i18n="docs.os3Desc">Datasets no Zenodo com DOI, metadados ricos e licenças CC BY / CC 0.</p></div>
+            <div class="os-card"><i class="fa-solid fa-book-open"></i><h4 data-i18n="docs.os4Title">Open Access</h4><p data-i18n="docs.os4Desc">Publicações em acesso aberto (gold OA) em journals IEEE, ICRA, IROS, RAS, JFR.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ NOTÍCIAS ============ -->
+<section class="section section-alt" id="noticias">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag" data-i18n="news.tag">Notícias</span>
+            <h2 data-i18n="news.title">Notícias e Publicações</h2>
+            <p data-i18n="news.subtitle">Acompanhe os eventos do projeto e as publicações científicas da equipa RUGGED.</p>
+        </div>
+
+        <!-- Notícias -->
+        <div class="subsection-header">
+            <h3><i class="fa-solid fa-newspaper"></i> <span data-i18n="news.subTitle">Notícias</span></h3>
+            <p data-i18n="news.subDesc">Eventos e atualizações do projeto</p>
+        </div>
+        <div class="filter-bar">
+            <div class="search-box">
+                <i class="fa-solid fa-search"></i>
+                <input type="text" id="newsSearch" data-i18n-ph="news.searchPh" placeholder="Pesquisar notícias...">
+            </div>
+        </div>
+        <div class="news-grid">
+            <article class="news-card" data-category="marco">
+                <div class="news-image"><span class="news-date">Nov 2024</span><i class="fa-solid fa-rocket"></i></div>
+                <div class="news-body">
+                    <span class="news-category" data-i18n="news.cardCat">Marco · Início</span>
+                    <h3 data-i18n="news.cardTitle">RUGGED arranca oficialmente em novembro de 2024</h3>
+                    <p data-i18n="news.cardExcerpt">O projeto RUGGED — Robust Uncrewed Ground technoloGy dEvelopment and Deployment — tem início oficial em novembro de 2024, com duração prevista de 36 meses em Coimbra.</p>
+                    <div class="news-meta"><span><i class="fa-solid fa-calendar"></i> <span data-i18n="news.cardDate">Novembro 2024</span></span><span><i class="fa-solid fa-location-dot"></i> Coimbra, Portugal</span></div>
+                    <span class="news-more"><span data-i18n="news.readMore">Ler mais</span> <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+                <div class="news-full">
+                    <p data-i18n="news.fullP1">O projeto RUGGED — Robust Uncrewed Ground technoloGy dEvelopment and Deployment — arrancou oficialmente em novembro de 2024, marcando o início de uma empreitada ambiciosa de 36 meses sediada em Coimbra, Portugal.</p>
+                    <p data-i18n="news.fullP2">Financiado pela Fundação para a Ciência e a Tecnologia (FCT) no âmbito do concurso IC&amp;DT 2024, o projeto reúne duas instituições de excelência: a ADAI (Associação para o Desenvolvimento da Aerodinâmica Industrial) e o ISR-UC (Instituto de Sistemas e Robótica da Universidade de Coimbra).</p>
+                    <p data-i18n="news.fullP3">O objetivo central do RUGGED é desenvolver soluções de hardware e software que permitam o funcionamento autónomo de robôs terrestres em ambientes extremos — florestas densas, cenários de incêndio, poeira, fumo, vibrações intensas e temperaturas extremas.</p>
+                    <p data-i18n="news.fullP4">Ao longo dos 36 meses, a equipa multidisciplinar irá trabalhar em 12 objetivos científicos, desde diretrizes de posicionamento de hardware e gestão térmica, até à validação operacional de um protótipo de robô florestal em contexto real.</p>
+                    <p data-i18n="news.fullP5">O projeto conta com um total de 57.87 ETIs e um consórcio que combina a experiência de investigadores séniores com a energia de jovens investigadores, reforçando a colaboração entre as áreas de engenharia mecânica, robótica e perceção artificial.</p>
+                </div>
+            </article>
+        </div>
+        <div class="no-results" id="newsNoResults">
+            <i class="fa-solid fa-search"></i>
+            <p data-i18n="news.noResults">Nenhuma notícia encontrada.</p>
+        </div>
+
+        <!-- Publicações Científicas -->
+        <div class="subsection-header">
+            <h3><i class="fa-solid fa-flask"></i> <span data-i18n="news.pubsTitle">Publicações Científicas</span></h3>
+            <p data-i18n="news.pubsDesc">Artigos científicos e capítulos de livro publicados pela equipa do projeto</p>
+        </div>
+        <div class="filter-bar">
+            <div class="search-box">
+                <i class="fa-solid fa-search"></i>
+                <input type="text" id="pubsSearch" data-i18n-ph="news.pubsSearchPh" placeholder="Pesquisar publicações...">
+            </div>
+            <div class="filter-buttons" id="pubsFilters">
+                <button class="filter-btn active" data-filter="all" data-i18n="news.filterAll">Todas</button>
+                <button class="filter-btn" data-filter="journal" data-i18n="news.filterJournal">Journals</button>
+                <button class="filter-btn" data-filter="conference" data-i18n="news.filterConf">Conferências</button>
+            </div>
+        </div>
+        <div class="pubs-placeholder">
+            <i class="fa-solid fa-flask"></i>
+            <p data-i18n="news.pubsPlaceholder">Ao longo do projeto serão publicados artigos científicos e capítulos de livro, que serão disponibilizados nesta secção.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ============ CONTACTOS ============ -->
+<section class="section section-dark" id="contactos">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag" data-i18n="contact.tag">Contactos</span>
+            <h2 data-i18n="contact.title">Fale connosco</h2>
+            <p data-i18n="contact.subtitle">Tem alguma questão sobre o projeto RUGGED? Entre em contacto com a nossa equipa.</p>
+        </div>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <div class="contact-item"><div class="contact-icon"><i class="fa-solid fa-envelope"></i></div><div><h4 data-i18n="contact.emailLabel">Email</h4><p><a href="mailto:geral@rugged.pt">geral@rugged.pt</a></p></div></div>
+                <div class="contact-item"><div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div><div><h4 data-i18n="contact.locationLabel">Localização</h4><p>Coimbra, Portugal<br>ADAI — Rua Pedro Hispano, 12</p></div></div>
+                <div class="map-embed">
+                    <iframe src="https://www.google.com/maps?q=Rua+Pedro+Hispano+12,+3030-289+Coimbra,+Portugal&output=embed" width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div>
+                <form class="contact-form" id="contactForm" action="https://formsubmit.co/geral@rugged.pt" method="POST">
+                    <input type="hidden" name="_subject" value="[RUGGED Website] Mensagem de contacto">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <div class="form-row">
+                        <div class="form-group"><label for="name" data-i18n="contact.formName">Nome</label><input type="text" id="name" name="name" data-i18n-ph="contact.formNamePh" placeholder="O seu nome" required></div>
+                        <div class="form-group"><label for="email" data-i18n="contact.formEmail">Email</label><input type="email" id="email" name="email" data-i18n-ph="contact.formEmailPh" placeholder="o seu email" required></div>
+                    </div>
+                    <div class="form-group"><label for="subject" data-i18n="contact.formSubject">Assunto</label><input type="text" id="subject" name="subject" data-i18n-ph="contact.formSubjectPh" placeholder="Assunto da mensagem" required></div>
+                    <div class="form-group"><label for="message" data-i18n="contact.formMessage">Mensagem</label><textarea id="message" name="message" rows="5" data-i18n-ph="contact.formMessagePh" placeholder="Escreva a sua mensagem..." required></textarea></div>
+                    <button type="submit" class="btn btn-primary" id="submitBtn" style="width: 100%; justify-content: center;"><span data-i18n="contact.formSubmit">Enviar mensagem</span> <i class="fa-solid fa-paper-plane"></i></button>
+                    <div class="form-message" id="formMessage"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-top">
+            <a href="#inicio" class="footer-brand">
+                <span>RUGGED<span class="logo-accent"></span>
+                    <small>Robust Uncrewed Ground technoloGy dEvelopment and Deployment</small>
+                </span>
+            </a>
+            <div class="footer-links">
+                <a href="#descricao" data-i18n="nav.descricao">Descrição</a>
+                <a href="#parceiros" data-i18n="nav.parceiros">Parceiros</a>
+                <a href="#documentacao" data-i18n="nav.documentacao">Documentação</a>
+                <a href="#noticias" data-i18n="nav.noticias">Notícias</a>
+                <a href="#contactos" data-i18n="nav.contactos">Contactos</a>
+            </div>
+        </div>
+        <div class="footer-funding">
+            <span class="funding-badge"><i class="fa-solid fa-landmark"></i> <span data-i18n="footer.fct">FCT — Fundação para a Ciência e a Tecnologia</span></span>
+            <span class="funding-badge"><i class="fa-solid fa-file-contract"></i> <span data-i18n="footer.contest">Concurso IC&amp;DT 2024</span></span>
+            <span class="funding-badge"><i class="fa-solid fa-location-dot"></i> Coimbra, Portugal</span>
+            <span class="funding-badge"><i class="fa-solid fa-calendar"></i> <span data-i18n="footer.dates">Nov 2024 — Out 2027</span></span>
+            <span class="funding-badge"><i class="fa-solid fa-building-columns"></i> ADAI · ISR-UC</span>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer.copyright">&copy; 2026 RUGGED Project. Todos os direitos reservados.</p>
+            <p data-i18n="footer.developed">Desenvolvido no âmbito do projeto FCT IC&amp;DT 2024</p>
+        </div>
+    </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" data-i18n-aria="scroll.top" aria-label="Voltar ao topo"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- News Modal -->
+<div class="modal-overlay" id="newsModal">
+    <div class="modal-content">
+        <button class="modal-close" id="modalClose" data-i18n-aria="modal.close" aria-label="Fechar"><i class="fa-solid fa-xmark"></i></button>
+        <div class="modal-header">
+            <span class="modal-category" id="modalCategory"></span>
+            <span class="modal-date" id="modalDate"></span>
+        </div>
+        <h2 class="modal-title" id="modalTitle"></h2>
+        <div class="modal-body" id="modalBody"></div>
+    </div>
+</div>
+
+<!-- Partner Modal -->
+<div class="modal-overlay" id="partnerModal">
+    <div class="modal-content">
+        <button class="modal-close" id="partnerModalClose" data-i18n-aria="modal.close" aria-label="Fechar"><i class="fa-solid fa-xmark"></i></button>
+        <div class="partner-modal-header">
+            <div class="partner-modal-logo" id="partnerModalLogo"></div>
+            <div>
+                <span class="partner-modal-type" id="partnerModalType"></span>
+                <h2 class="partner-modal-name" id="partnerModalName"></h2>
+            </div>
+        </div>
+        <div class="partner-modal-body" id="partnerModalBody"></div>
+        <a class="partner-modal-link" id="partnerModalLink" href="#" target="_blank" rel="noopener">
+            <i class="fa-solid fa-globe"></i> <span data-i18n="modal.visitWebsite">Visitar website</span>
+        </a>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+<script src="js/i18n.js"></script>
+</body>
+</html>
