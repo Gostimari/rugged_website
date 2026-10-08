@@ -246,11 +246,11 @@ img { max-width: 100%; display: block; }
 .section-alt { background-color: #0D1117; }
 
 /* Per-section unique gradients */
-#descricao { background: linear-gradient(160deg, #0D1117 0%, #0C2340 100%); }
-#parceiros { background: linear-gradient(160deg, #F8FAFD 0%, #E4EDF9 100%); }
-#documentacao { background: linear-gradient(160deg, #E9F1FC 0%, #CFE1F8 100%); }
-#noticias { background: linear-gradient(160deg, #14181F 0%, #0C0F14 100%); }
-#contactos { background: linear-gradient(160deg, #10294D 0%, #0A1730 100%); }
+#descricao { background: linear-gradient(160deg, #0E1B2E 0%, #0A1220 100%); }
+#parceiros { background: linear-gradient(160deg, #F4F8FC 0%, #DFE9F5 100%); }
+#documentacao { background: linear-gradient(160deg, #E3EEFB 0%, #C9DCF5 100%); }
+#noticias { background: linear-gradient(160deg, #151A21 0%, #0B0E13 100%); }
+#contactos { background: linear-gradient(160deg, #123B6D 0%, #0B2144 100%); }
 .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
 
 .section-header { text-align: center; margin-bottom: 3.5rem; }
