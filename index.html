@@ -17,7 +17,7 @@
 <nav class="navbar" id="navbar">
     <div class="navbar-inner">
         <a href="#inicio" class="navbar-brand">
-            RUGGED<span class="logo-accent"></span>
+            <img src="images/Rugged%20Logo%20White.png" alt="RUGGED" class="brand-logo navbar-brand-logo">
         </a>
         <div class="nav-menu">
             <ul>
@@ -42,9 +42,8 @@
 <div class="mobile-menu-overlay" id="mobileOverlay"></div>
 <div class="mobile-menu" id="mobileMenu">
     <div class="mobile-menu-header">
-        <a href="#inicio" class="navbar-brand" style="color: var(--secondary-color);">
-            <span class="logo-icon"><i class="fa-solid fa-robot"></i></span>
-            RUGGED<span class="logo-accent">.</span>
+        <a href="#inicio" class="navbar-brand mobile-menu-brand">
+            <img src="images/Rugged%20Logo%20Black.png" alt="RUGGED" class="brand-logo navbar-brand-logo">
         </a>
         <button class="mobile-menu-close" id="mobileClose" data-i18n-aria="nav.closeMenu" aria-label="Fechar menu">
             <i class="fa-solid fa-xmark"></i>
@@ -81,6 +80,18 @@
             <div class="floating-badge badge-1"><i class="fa-solid fa-tree"></i><span data-i18n="hero.badgeForest">Robótica Florestal</span></div>
             <div class="floating-badge badge-2"><i class="fa-solid fa-fire-flame-curved"></i><span data-i18n="hero.badgeFire">Cenários de Incêndio</span></div>
             <div class="floating-badge badge-3"><i class="fa-solid fa-eye-low-vision"></i><span data-i18n="hero.badgeDust">Poeira · Fumo · Calor</span></div>
+        </div>
+    </div>
+    <div class="hero-funding">
+        <div class="hero-funding-inner">
+            <div class="funding-logos">
+                <img src="images/FCT%20logo.png" alt="FCT — Fundação para a Ciência e a Tecnologia" class="funding-logo">
+                <img src="images/RP%20logo.png" alt="República Portuguesa" class="funding-logo">
+            </div>
+            <div class="funding-text">
+                <p class="funding-support" data-i18n="hero.fctRef">FCT Project Ref. 2023.16314.ICDT</p>
+                <p class="funding-support" data-i18n="hero.fctSupport">Supported by national funds through FCT – Fundação para a Ciência e a Tecnologia, I.P., under project RUGGED – “Robust Uncrewed Ground technoloGy dEvelopment and Deployment”</p>
+            </div>
         </div>
     </div>
 </section>
@@ -380,9 +391,7 @@
     <div class="footer-inner">
         <div class="footer-top">
             <a href="#inicio" class="footer-brand">
-                <span>RUGGED<span class="logo-accent"></span>
-                    <small>Robust Uncrewed Ground technoloGy dEvelopment and Deployment</small>
-                </span>
+                <img src="images/Rugged%20Logo%20White.png" alt="RUGGED" class="brand-logo footer-brand-logo">
             </a>
             <div class="footer-links">
                 <a href="#descricao" data-i18n="nav.descricao">Descrição</a>
@@ -393,15 +402,19 @@
             </div>
         </div>
         <div class="footer-funding">
-            <span class="funding-badge"><i class="fa-solid fa-landmark"></i> <span data-i18n="footer.fct">FCT — Fundação para a Ciência e a Tecnologia</span></span>
-            <span class="funding-badge"><i class="fa-solid fa-file-contract"></i> <span data-i18n="footer.contest">Concurso IC&amp;DT 2024</span></span>
-            <span class="funding-badge"><i class="fa-solid fa-location-dot"></i> Coimbra, Portugal</span>
-            <span class="funding-badge"><i class="fa-solid fa-calendar"></i> <span data-i18n="footer.dates">Nov 2024 — Out 2027</span></span>
-            <span class="funding-badge"><i class="fa-solid fa-building-columns"></i> ADAI · ISR-UC</span>
+            <div class="hero-funding-inner">
+                <div class="funding-logos">
+                    <img src="images/FCT%20logo.png" alt="FCT — Fundação para a Ciência e a Tecnologia" class="funding-logo">
+                    <img src="images/RP%20logo.png" alt="República Portuguesa" class="funding-logo">
+                </div>
+                <div class="funding-text">
+                    <p class="funding-support" data-i18n="hero.fctRef">FCT Project Ref. 2023.16314.ICDT</p>
+                    <p class="funding-support" data-i18n="hero.fctSupport">Supported by national funds through FCT – Fundação para a Ciência e a Tecnologia, I.P., under project RUGGED – “Robust Uncrewed Ground technoloGy dEvelopment and Deployment”</p>
+                </div>
+            </div>
         </div>
         <div class="footer-bottom">
             <p data-i18n="footer.copyright">&copy; 2026 RUGGED Project. Todos os direitos reservados.</p>
-            <p data-i18n="footer.developed">Desenvolvido no âmbito do projeto FCT IC&amp;DT 2024</p>
         </div>
     </div>
 </footer>

@@ -20,6 +20,8 @@ const I18N = {
         'hero.badgeForest': 'Robótica Florestal',
         'hero.badgeFire': 'Cenários de Incêndio',
         'hero.badgeDust': 'Poeira · Fumo · Calor',
+        'hero.fctRef': 'FCT Project Ref. 2023.16314.ICDT',
+        'hero.fctSupport': 'Supported by national funds through FCT – Fundação para a Ciência e a Tecnologia, I.P., under project RUGGED – “Robust Uncrewed Ground technoloGy dEvelopment and Deployment”',
         // Descrição
         'desc.tag': 'Descrição',
         'desc.title': 'O projeto RUGGED',
@@ -169,6 +171,8 @@ const I18N = {
         'hero.badgeForest': 'Forest Robotics',
         'hero.badgeFire': 'Fire Scenarios',
         'hero.badgeDust': 'Dust · Smoke · Heat',
+        'hero.fctRef': 'FCT Project Ref. 2023.16314.ICDT',
+        'hero.fctSupport': 'Supported by national funds through FCT – Fundação para a Ciência e a Tecnologia, I.P., under project RUGGED – “Robust Uncrewed Ground technoloGy dEvelopment and Deployment”',
         // Descrição
         'desc.tag': 'Description',
         'desc.title': 'The RUGGED project',
