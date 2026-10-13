@@ -21,7 +21,7 @@ const I18N = {
         'hero.badgeFire': 'Cenários de Incêndio',
         'hero.badgeDust': 'Poeira · Fumo · Calor',
         'hero.fctRef': 'FCT Project Ref. 2023.16314.ICDT',
-        'hero.fctSupport': 'Este trabalho foi financiado por fundos nacionais através da FCT - Fundação para a Ciência e a Tecnologia, I.P., no âmbito do projeto RUGGED – “Desenvolvimento de tecnologia para sistemas terrestres não tripulados em ambientes extremos”, ref. 2023.16314.ICDT, https://doi.org/10.54499/2023.16314.ICDT.”',
+        'hero.fctSupport': 'Projeto RUGGED – “Desenvolvimento de tecnologia para sistemas terrestres não tripulados em ambientes extremos”, ref. 2023.16314.ICDT, https://doi.org/10.54499/2023.16314.ICDT., financiado por fundos nacionais através da FCT - Fundação para a Ciência e a Tecnologia, I.P.',
         // Descrição
         'desc.tag': 'Descrição',
         'desc.title': 'O projeto <span class="rugged-accent">RUGGED</span>',
@@ -172,7 +172,7 @@ const I18N = {
         'hero.badgeFire': 'Fire Scenarios',
         'hero.badgeDust': 'Dust · Smoke · Heat',
         'hero.fctRef': 'FCT Project Ref. 2023.16314.ICDT',
-        'hero.fctSupport': 'This work was funded by national funds through FCT – Fundação para a Ciência e a Tecnologia, I.P., under project RUGGED – “Robust Uncrewed Ground technoloGy dEvelopment and Deployment”, ref. 2023.16314.ICDT, https://doi.org/10.54499/2023.16314.ICDT.”',
+        'hero.fctSupport': 'Project RUGGED – “Robust Uncrewed Ground technoloGy dEvelopment and Deployment”, ref. 2023.16314.ICDT, https://doi.org/10.54499/2023.16314.ICDT., funded by national funds through FCT – Foundation for Science and Technology, I.P.',
         // Descrição
         'desc.tag': 'Description',
         'desc.title': 'The <span class="rugged-accent">RUGGED</span> project',

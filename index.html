@@ -17,7 +17,7 @@
 <nav class="navbar" id="navbar">
     <div class="navbar-inner">
         <a href="#inicio" class="navbar-brand">
-            <img src="images/Rugged%20Logo%20White.png" alt="RUGGED" class="brand-logo navbar-brand-logo">
+            <img src="media/Rugged%20Logo%20White.png" alt="RUGGED" class="brand-logo navbar-brand-logo">
         </a>
         <div class="nav-menu">
             <ul>
@@ -43,7 +43,7 @@
 <div class="mobile-menu" id="mobileMenu">
     <div class="mobile-menu-header">
         <a href="#inicio" class="navbar-brand mobile-menu-brand">
-            <img src="images/Rugged%20Logo%20Black.png" alt="RUGGED" class="brand-logo navbar-brand-logo">
+            <img src="media/Rugged%20Logo%20Black.png" alt="RUGGED" class="brand-logo navbar-brand-logo">
         </a>
         <button class="mobile-menu-close" id="mobileClose" data-i18n-aria="nav.closeMenu" aria-label="Fechar menu">
             <i class="fa-solid fa-xmark"></i>
@@ -76,7 +76,7 @@
             </div>
         </div>
         <div class="hero-visual">
-            <div class="visual-card"><i class="fa-solid fa-robot"></i></div>
+            <div class="visual-card"><img src="media/lv600.jpg" alt="Robô terrestre RUGGED"></div>
             <div class="floating-badge badge-1"><i class="fa-solid fa-tree"></i><span data-i18n="hero.badgeForest">Robótica Florestal</span></div>
             <div class="floating-badge badge-2"><i class="fa-solid fa-fire-flame-curved"></i><span data-i18n="hero.badgeFire">Cenários de Incêndio</span></div>
             <div class="floating-badge badge-3"><i class="fa-solid fa-eye-low-vision"></i><span data-i18n="hero.badgeDust">Poeira · Fumo · Calor</span></div>
@@ -85,11 +85,11 @@
     <div class="hero-funding">
         <div class="hero-funding-inner">
             <div class="funding-logos">
-                <img src="images/FCT%20logo.png" alt="FCT — Fundação para a Ciência e a Tecnologia" class="funding-logo">
-                <img src="images/RP%20logo.png" alt="República Portuguesa" class="funding-logo">
+                <img src="media/FCT%20logo.png" alt="FCT — Fundação para a Ciência e a Tecnologia" class="funding-logo">
+                <img src="media/RP%20logo.png" alt="República Portuguesa" class="funding-logo">
             </div>
             <div class="funding-text">
-                <p class="funding-support" data-i18n="hero.fctSupport">Este trabalho foi financiado por fundos nacionais através da FCT - Fundação para a Ciência e a Tecnologia, I.P., no âmbito do projeto RUGGED – “Desenvolvimento de tecnologia para sistemas terrestres não tripulados em ambientes extremos”, ref. 2023.16314.ICDT, https://doi.org/10.54499/2023.16314.ICDT.”</p>
+                <p class="funding-support" data-i18n="hero.fctSupport">Projeto RUGGED – “Desenvolvimento de tecnologia para sistemas terrestres não tripulados em ambientes extremos”, ref. 2023.16314.ICDT, https://doi.org/10.54499/2023.16314.ICDT., financiado por fundos nacionais através da FCT - Fundação para a Ciência e a Tecnologia, I.P.</p>
             </div>
         </div>
     </div>
@@ -100,16 +100,27 @@
     <div class="container">
         <div class="section-header">
             <span class="section-tag" data-i18n="desc.tag">Descrição</span>
-            <h2 data-i18n="desc.title">O projeto RUGGED</h2>
+            <h2 data-i18n="desc.title">O projeto <span class="rugged-accent">RUGGED</span></h2>
             <p data-i18n="desc.subtitle">Uma abordagem multidisciplinar para tornar os sistemas terrestres não tripulados resilientes em ambientes extremos.</p>
         </div>
+    </div>
 
+    <div class="about-grid">
+        <div class="about-image">
+            <img src="media/ren-robot-square.jpg" alt="Robô terrestre RUGGED">
+        </div>
         <div class="about-text">
             <p data-i18n="desc.p1">A revolução no desenvolvimento de microprocessadores nas últimas décadas, aliada a uma redução sustancial dos seus custos, criou um ambiente ideal para o desenvolvimento de algoritmos avançados e inteligência artificial em diversos setores. Um exemplo notável é a mudança de paradigma nos sistemas móveis não tripulados que, desde as suas origens nos anos 50 em ambientes fabris, sofreram melhorias significativas em termos de dimensão, robustez e capacidades.</p>
             <p data-i18n="desc.p2">Contudo, <strong>certos domínios — como a agricultura, a silvicultura, a construção civil e cenários de desastres naturais — colocam desafios significativos</strong> para o estabelecimento de uma base robusta para sistemas autónomos terrestres. Apesar dos progressos consideráveis em algoritmos de perceção, localização e navegação, impulsionados pela indústria dos transportes, <strong>existe uma escassez de conhecimento sobre o desempenho destes sistemas em condições adversas</strong>, para além dos ambientes estruturados e relativamente controlados de estradas e armazéns.</p>
             <p data-i18n="desc.p3">O projeto RUGGED procura avançar soluções que facilitem a operação integrada de algoritmos de perceção, localização e navegação, juntamente com hardware crítico para sistemas não tripulados em ambientes exteriores desafiadores, como cenários agrícolas, florestais e de incêndio. Esta empreitada ambiciosa exige uma abordagem multidisciplinar, focada principalmente nos domínios da engenharia eletrotécnica e mecânica, com forte ênfase em <strong>testes de campo reais</strong>, utilizando maquinaria florestal real e sensores em ambientes operacionais.</p>
         </div>
+        <div class="about-video">
+            <video src="media/banner-bold-robotics.mp4" autoplay muted loop playsinline></video>
+            <span class="video-play-hint"><i class="fa-solid fa-play"></i></span>
+        </div>
+    </div>
 
+    <div class="container">
         <div class="keywords-row">
             <span class="keyword-tag" data-i18n="desc.kw1">Robótica Florestal</span>
             <span class="keyword-tag" data-i18n="desc.kw2">Sistemas Autónomos</span>
@@ -214,7 +225,7 @@
 
         <div class="partners-grid">
             <div class="partner-card" data-website="https://www.uc.pt/adai/">
-                <div class="partner-logo"><img src="images/ADAI.png" alt="ADAI"></div>
+                <div class="partner-logo"><img src="media/ADAI.png" alt="ADAI"></div>
                 <h3 data-i18n="partners.adaiName">Associação para o Desenvolvimento da Aerodinâmica Industrial</h3>
                 <p data-i18n="partners.adaiDesc">Instituição privada sem fins lucrativos criada em 1990 na Universidade de Coimbra e classificada como "Excelente" pela FCT. Conta com 128 investigadores em quatro áreas: Energia e Detónica, Incêndios Florestais, Ecologia Industrial e Sustentabilidade, com laboratórios em Coimbra e Leiria.</p>
                 <span class="partner-more"><span data-i18n="partners.learnMore">Saber mais</span> <i class="fa-solid fa-arrow-right"></i></span>
@@ -225,7 +236,7 @@
                 </div>
             </div>
             <div class="partner-card" data-website="https://www.isr.uc.pt/">
-                <div class="partner-logo"><img src="images/ISR.png" alt="ISR-UC"></div>
+                <div class="partner-logo"><img src="media/ISR.png" alt="ISR-UC"></div>
                 <h3 data-i18n="partners.isrName">Instituto de Sistemas e Robótica da Universidade de Coimbra</h3>
                 <p data-i18n="partners.isrDesc">Unidade de investigação fundada em 1992 e classificada como "Excelente" pela FCT — a única unidade nacional de Engenharia Eletrotécnica e de Computadores com esta distinção. Focada em robótica e sistemas inteligentes, com destaque para projetos em ambientes florestais como SEMFIRE, CORE e SAFEFOREST.</p>
                 <span class="partner-more"><span data-i18n="partners.learnMore">Saber mais</span> <i class="fa-solid fa-arrow-right"></i></span>
@@ -390,7 +401,7 @@
     <div class="footer-inner">
         <div class="footer-top">
             <a href="#inicio" class="footer-brand">
-                <img src="images/Rugged%20Logo%20White.png" alt="RUGGED" class="brand-logo footer-brand-logo">
+                <img src="media/Rugged%20Logo%20White.png" alt="RUGGED" class="brand-logo footer-brand-logo">
             </a>
             <div class="footer-links">
                 <a href="#descricao" data-i18n="nav.descricao">Descrição</a>
@@ -403,11 +414,11 @@
         <div class="footer-funding">
             <div class="hero-funding-inner">
                 <div class="funding-logos">
-                    <img src="images/FCT%20logo.png" alt="FCT — Fundação para a Ciência e a Tecnologia" class="funding-logo">
-                    <img src="images/RP%20logo.png" alt="República Portuguesa" class="funding-logo">
+                    <img src="media/FCT%20logo.png" alt="FCT — Fundação para a Ciência e a Tecnologia" class="funding-logo">
+                    <img src="media/RP%20logo.png" alt="República Portuguesa" class="funding-logo">
                 </div>
                 <div class="funding-text">
-                    <p class="funding-support" data-i18n="hero.fctSupport">Este trabalho foi financiado por fundos nacionais através da FCT - Fundação para a Ciência e a Tecnologia, I.P., no âmbito do projeto RUGGED – “Desenvolvimento de tecnologia para sistemas terrestres não tripulados em ambientes extremos”, ref. 2023.16314.ICDT, https://doi.org/10.54499/2023.16314.ICDT.”</p>
+                    <p class="funding-support" data-i18n="hero.fctSupport">Projeto RUGGED – “Desenvolvimento de tecnologia para sistemas terrestres não tripulados em ambientes extremos”, ref. 2023.16314.ICDT, https://doi.org/10.54499/2023.16314.ICDT., financiado por fundos nacionais através da FCT - Fundação para a Ciência e a Tecnologia, I.P.</p>
                 </div>
             </div>
         </div>
@@ -447,6 +458,14 @@
         <a class="partner-modal-link" id="partnerModalLink" href="#" target="_blank" rel="noopener">
             <i class="fa-solid fa-globe"></i> <span data-i18n="modal.visitWebsite">Visitar website</span>
         </a>
+    </div>
+</div>
+
+<!-- Video Modal -->
+<div class="modal-overlay" id="videoModal">
+    <div class="modal-content">
+        <button class="modal-close" id="videoModalClose" data-i18n-aria="modal.close" aria-label="Fechar"><i class="fa-solid fa-xmark"></i></button>
+        <video id="videoModalPlayer" src="media/banner-bold-robotics.mp4" controls></video>
     </div>
 </div>
 
