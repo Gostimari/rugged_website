@@ -124,7 +124,9 @@ img { max-width: 100%; display: block; }
 }
 .mobile-menu .nav-link:hover,
 .mobile-menu .nav-link.active { background-color: rgba(74, 158, 255, 0.1); color: var(--primary-dark); }
-.mobile-menu .lang-switcher { margin: 1.5rem 0 0; border-color: #e0e0e0; background: #f5f5f5; }
+/* width:fit-content keeps the switcher content-sized (as in the navbar);
+   as a block child of the menu it would otherwise stretch full width */
+.mobile-menu .lang-switcher { margin: 1.5rem 0 0; border-color: #e0e0e0; background: #f5f5f5; width: fit-content; }
 .mobile-menu .lang-switcher .lang-btn { color: #999; }
 .mobile-menu .lang-switcher .lang-btn.active { color: var(--secondary-color); background: #fff; }
 
