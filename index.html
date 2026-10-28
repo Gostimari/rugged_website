@@ -354,9 +354,44 @@
                 <button class="filter-btn" data-filter="conference" data-i18n="news.filterConf">Conferências</button>
             </div>
         </div>
-        <div class="pubs-placeholder">
-            <i class="fa-solid fa-flask"></i>
-            <p data-i18n="news.pubsPlaceholder">Ao longo do projeto serão publicados artigos científicos e capítulos de livro, que serão disponibilizados nesta secção.</p>
+        <div class="pubs-grid">
+            <article class="pub-card" data-type="conference">
+                <div class="pub-type"><i class="fa-solid fa-file-lines"></i> <span data-i18n="pubs.catConference">Conferência</span></div>
+                <h3>Tiered-Resolution Volumetric Mapping for Real-Time Simultaneous Planning and Mapping on Natural Outdoor Environments</h3>
+                <p class="pub-authors">A. E. Carvalho, D. Portugal, P. Peixoto, G. Kantor</p>
+                <div class="pub-venue">
+                    <span><i class="fa-solid fa-book-open"></i> 2026 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2026) — Workshop on Data in Field Robotics: From State Estimation to Navigation (DFR)</span>
+                    <span><i class="fa-solid fa-calendar"></i> <span data-i18n="pubs.date1">27 de setembro – 1 de outubro de 2026</span></span>
+                    <span><i class="fa-solid fa-location-dot"></i> Pittsburgh (PA), USA</span>
+                </div>
+                <a class="pub-link" href="https://arxiv.org/abs/2610.20476" target="_blank" rel="noopener"><span data-i18n="pubs.viewPaper">Ver publicação</span> <i class="fa-solid fa-arrow-right"></i></a>
+            </article>
+            <article class="pub-card" data-type="conference">
+                <div class="pub-type"><i class="fa-solid fa-file-lines"></i> <span data-i18n="pubs.catConference">Conferência</span></div>
+                <h3>Vision Beyond Frames: Exploring LiDAR-Inertial-Events-Based Localization in Forest Environments</h3>
+                <p class="pub-authors">M. P. Cristóvão, D. Portugal</p>
+                <div class="pub-venue">
+                    <span><i class="fa-solid fa-book-open"></i> 16th IEEE International Conference on Information Science and Technology (ICIST 2026)</span>
+                    <span><i class="fa-solid fa-calendar"></i> <span data-i18n="pubs.date2">1 a 6 de outubro de 2026</span></span>
+                    <span><i class="fa-solid fa-location-dot"></i> Coimbra, Portugal</span>
+                </div>
+                <a class="pub-link" href="https://ieeexplore.ieee.org/document/11727841" target="_blank" rel="noopener"><span data-i18n="pubs.viewPaper">Ver publicação</span> <i class="fa-solid fa-arrow-right"></i></a>
+            </article>
+            <article class="pub-card" data-type="conference">
+                <div class="pub-type"><i class="fa-solid fa-file-lines"></i> <span data-i18n="pubs.catConference">Conferência</span></div>
+                <h3>PRUNE: Selective LiDAR–Camera Projection via Multi-Stage Evidence Rejection for Semantic Fusion in Unstructured Forests</h3>
+                <p class="pub-authors">M. E. Andrada, D. Portugal, P. Peixoto, G. Kantor</p>
+                <div class="pub-venue">
+                    <span><i class="fa-solid fa-book-open"></i> 16th IEEE International Conference on Information Science and Technology (ICIST 2026)</span>
+                    <span><i class="fa-solid fa-calendar"></i> <span data-i18n="pubs.date2">1 a 6 de outubro de 2026</span></span>
+                    <span><i class="fa-solid fa-location-dot"></i> Coimbra, Portugal</span>
+                </div>
+                <a class="pub-link" href="https://ieeexplore.ieee.org/document/11727669" target="_blank" rel="noopener"><span data-i18n="pubs.viewPaper">Ver publicação</span> <i class="fa-solid fa-arrow-right"></i></a>
+            </article>
+        </div>
+        <div class="no-results" id="pubsNoResults">
+            <i class="fa-solid fa-search"></i>
+            <p data-i18n="pubs.noResults">Nenhuma publicação encontrada.</p>
         </div>
     </div>
 </section>

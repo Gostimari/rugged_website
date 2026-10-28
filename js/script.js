@@ -288,10 +288,12 @@ newsFilterBtns.forEach(btn => {
 const pubsSearch = document.getElementById('pubsSearch');
 const pubsFilterBtns = document.querySelectorAll('#pubsFilters .filter-btn');
 const pubCards = document.querySelectorAll('.pub-card');
+const pubsNoResults = document.getElementById('pubsNoResults');
 let pubsActiveFilter = 'all';
 
 function filterPubs() {
     const searchTerm = pubsSearch.value.toLowerCase().trim();
+    let visibleCount = 0;
 
     pubCards.forEach(card => {
         const type = card.getAttribute('data-type') || '';
@@ -300,8 +302,12 @@ function filterPubs() {
         const matchesFilter = pubsActiveFilter === 'all' || type === pubsActiveFilter;
         const matchesSearch = searchTerm === '' || text.includes(searchTerm);
 
-        card.style.display = (matchesFilter && matchesSearch) ? '' : 'none';
+        const visible = matchesFilter && matchesSearch;
+        card.style.display = visible ? '' : 'none';
+        if (visible) visibleCount++;
     });
+
+    if (pubsNoResults) pubsNoResults.style.display = visibleCount === 0 ? 'block' : 'none';
 }
 
 if (pubsSearch) pubsSearch.addEventListener('input', filterPubs);
